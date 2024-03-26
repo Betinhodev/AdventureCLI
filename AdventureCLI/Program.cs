@@ -160,14 +160,14 @@ namespace AdventureCLI
         }
             public static void Print(string text, int speed = 40)
             {
-                //SoundPlayer soundPlayer = new SoundPlayer("sounds/type.mp3");
-                //soundPlayer.PlayLooping();
+                SoundPlayer soundPlayer = new SoundPlayer("sounds/type.mp3");
+                soundPlayer.PlayLooping();
                 foreach (char c in text)
                 {
                     Console.Write(c);
                     System.Threading.Thread.Sleep(speed);
                 }
-                //soundPlayer.Stop();
+                soundPlayer.Stop();
                 Console.WriteLine();
             }
 
