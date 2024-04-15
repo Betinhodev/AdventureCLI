@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdventureCLI
+﻿namespace AdventureCLI
 {
     public class Encounters
     {
@@ -82,6 +76,7 @@ namespace AdventureCLI
                 Console.WriteLine("=====================");
                 Console.WriteLine("| (A)ttack (D)efend |");
                 Console.WriteLine("|   (R)un   (H)eal  |");
+                Console.WriteLine("|     (S)kills      |");
                 Console.WriteLine("=====================");
                 Console.WriteLine(" Potions: " + Program.currentPlayer.potion + "  Health:  " + Program.currentPlayer.health);
                 string input = Console.ReadLine();
